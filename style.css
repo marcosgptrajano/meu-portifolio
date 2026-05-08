@@ -1,27 +1,25 @@
 @charset "UTF-8";
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://use.typekit.net/ovv2ced.css");
 *{
     margin: 0px;
     padding: 0px;
 }
 
-@font-face {
-    font-family: 'Bruson';
-    src: url("fonts/Brunson.ttf") format('truetype');
+html{
+    scroll-behavior: smooth;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
 
 :root{
     --color01: #021734;
-    --color02: #183966;
+    --color02: #041427;
     --color03: #436799;
     --color04: #83A1CC;
     --color05: #D6E7FF;
+    --destaque: rgb(23, 107, 224);
     
-    --main-font: Arial, Helvetica, sans-serif;
-    --title-font: "Roboto", sans-serif;
+    --main-font: 'poppins-thin';
+    --title-font: 'Inter';
     --special-font: 'Bruson', serif;
 }
 
@@ -29,18 +27,24 @@
     display: inline-block;
     color: white;
     font-size: 16px;
-    margin: 30px 30px 20px 20px;
+    margin: 30px 20px 20px 0px;
     text-indent: 20px;
     font-family: var(--title-font);
     text-transform: uppercase;
 }
 
 #title span{
-    color: #176be0;
+    color: var(--destaque);
 }
+
 nav{
+    background-color: var(--color01);
+    position: fixed;
     text-align: center;
     border-bottom: 2px solid #5f47ff28 ;
+    top: 0px;
+    width: 100%;
+    z-index: 1000; 
 }
 nav a{    
     font-size: 13px;
@@ -58,19 +62,89 @@ nav a:hover{
     color: var(--color02);
 }
 
+
 body{
     background-color: var(--color01);
 }
+
+h1, h2, h3{
+    font-family: var(--title-font);
+}
+
+p{
+    font-family: var(--main-font);
+}
+.capa{
+    margin: 120px 0px 50px 0px;
+    max-width: 900px;
+}
+
+.capa h1, .capa h2{
+    color: white;
+    margin: 10px;
+    font-weight: 700;
+}
+
+.capa h1{
+    font-size: 3em;
+}
+
+.capa p{
+    color: white;
+    margin: 10px;
+}
+#contato{
+    display: inline-block;
+    background-color: var(--destaque);
+    margin: 20px 10px;
+    color: white;
+    text-decoration: none;
+    font-family: var(--title-font);
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+
+#oi{
+    text-transform: uppercase;
+    color: var(--destaque);
+    font-weight: 600;
+}
+
+.capa strong{
+    color: var(--destaque);
+}
+
+.capa section{
+    display: inline-block;
+    margin: 10px 20px 0px 10px;
+}
+
+.capa .imgg{
+    display: inline-block;
+    width: 1px;
+    margin-left: 10px;
+}
+
+.capa img{
+    width: 253px;
+}
+
+
 main{
-    max-width: 800px;
+    max-width: 1000px;
     min-width: 400px;
     margin :auto;
 }
+
+
 .geral h2{
-    background-color: var(--color03);
+    background-color: var(--destaque);
     font-style: var(--special-font);
     margin: 0px -25px;
-    margin-left: 200px;
     padding: 5px 20px;
     font-size: 1rem;
     color: white;
@@ -78,7 +152,6 @@ main{
 }
 
 .geral p{
-    margin-left: 220px;
     padding: 20px 0px;
 }
 
@@ -86,20 +159,85 @@ main{
     color: var(--color03);
 }
 
+
 .geral{
     text-align: justify;
     padding: 0px 25px ;
-    margin: 100px 50px 10px 30px;
     font-family: var(--main-font);
-    background-color: var(--color05);
-    line-height: 1.5em;
+    background-color:white;
+    line-height: 1.8em;
     border-radius: 10px;
+    display: inline-block;
+    margin: 80px 20px 60px 20px;
+    z-index: 0;
+    margin-left: 250px;
 }
 
 #geral img{
-    position: absolute;
     width: 230px;
-    margin: -35px 0px 0px 30px;
+    margin: 44px 0px 0px 30px;
+}
+
+#geral .imgg{
+    display: flexbox;
+    z-index: 10;
+    position: absolute;
+
+}
+#projetos h2{
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: var(--destaque);
+}
+
+#projetos {
+    padding: 30px;
+    background-color: var(--color02);
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid #43679936;
+}
+#projetos>div{
+    margin: auto;
+    text-align: center;
+}
+#projetos article{
+    display: inline-block;
+    max-width: 300px;
+    vertical-align: top;
+    background-color: var(--color05);
+    margin: 30px 10px 10px 0px;
+    height: 600px;
+    border-radius: 10px 10px 10px 10px;
+    position: relative;
+}
+
+#projetos h3{
+    display: flexbox;
+    position: absolute;
+    margin: 235px 0px;
+    text-transform: uppercase;
+    background-image: linear-gradient( to top, var(--color05), rgba(255, 255, 255, 0.093));
+    width: 300px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #176be0;
+    
+
+}
+
+#projetos p{
+    padding: 20px;
+    text-align: justify;
+   
+}
+
+#projetos img{
+    border-radius: 10px 10px 0px 0px;
+    width: 600px;
 }
 
 
