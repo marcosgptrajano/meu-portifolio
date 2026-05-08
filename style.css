@@ -107,7 +107,6 @@ p{
     
 }
 
-
 #oi{
     text-transform: uppercase;
     color: var(--destaque);
@@ -123,15 +122,28 @@ p{
     margin: 10px 20px 0px 10px;
 }
 
-.capa .imgg{
+
+
+.avatar{
+    text-align: center;
     display: inline-block;
-    width: 1px;
-    margin-left: 10px;
+    margin: auto;
+    padding-left: 10px ;
 }
 
-.capa img{
-    width: 253px;
+.avatar source {
+    display: none;
 }
+
+.avatar img{
+    margin: auto;
+    width: 29vw;
+    max-width: 350px;
+    vertical-align: 100% ;
+    
+
+}
+
 
 
 main{
