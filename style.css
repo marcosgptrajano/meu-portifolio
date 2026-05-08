@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'Bruson';
+    src: url("fonts/Brunson.ttf") format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+    --color01: #021734;
+    --color02: #183966;
+    --color03: #436799;
+    --color04: #83A1CC;
+    --color05: #D6E7FF;
+    
+    --main-font: Arial, Helvetica, sans-serif;
+    --title-font: "Roboto", sans-serif;
+    --special-font: 'Bruson', serif;
+}
+
+#title{
+    display: inline-block;
+    color: white;
+    font-size: 16px;
+    margin: 30px 30px 20px 20px;
+    text-indent: 20px;
+    font-family: var(--title-font);
+    text-transform: uppercase;
+}
+
+#title span{
+    color: #176be0;
+}
+nav{
+    text-align: center;
+    border-bottom: 2px solid #5f47ff28 ;
+}
+nav a{    
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+    font-family: var(--main-font);
+    margin: 0px 10px 0px 0px;
+    vertical-align: 10px;
+    padding: 5px;
+}
+
+nav a:hover{
+    background-color: var(--color04);
+    text-decoration: underline;
+    color: var(--color02);
+}
+
+body{
+    background-color: var(--color01);
+}
+main{
+    max-width: 800px;
+    min-width: 400px;
+    margin :auto;
+}
+.geral h2{
+    background-color: var(--color03);
+    font-style: var(--special-font);
+    margin: 0px -25px;
+    margin-left: 200px;
+    padding: 5px 20px;
+    font-size: 1rem;
+    color: white;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.geral p{
+    margin-left: 220px;
+    padding: 20px 0px;
+}
+
+.geral p>strong{
+    color: var(--color03);
+}
+
+.geral{
+    text-align: justify;
+    padding: 0px 25px ;
+    margin: 100px 50px 10px 30px;
+    font-family: var(--main-font);
+    background-color: var(--color05);
+    line-height: 1.5em;
+    border-radius: 10px;
+}
+
+#geral img{
+    position: absolute;
+    width: 230px;
+    margin: -35px 0px 0px 30px;
+}
+
+
+
+
