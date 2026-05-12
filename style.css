@@ -61,9 +61,15 @@ nav a{
 }
 
 nav a:hover{
-    background-color: var(--color04);
-    text-decoration: underline;
-    color: var(--color02);
+    text-decoration: wavy underline;
+    text-decoration-color: var(--destaque);
+    font-weight: bold;
+    color: white;
+    background-color: #0345a956;
+   
+    border-radius: 3px;
+    padding: 8px;
+    transition-duration: 0.5s;
 }
 
 
@@ -89,17 +95,16 @@ p{
 
 #capa{
     margin: 120px auto 50px auto;
-    max-width: 1000px;
+    max-width: 1400px;
     padding-bottom: 40px;
     box-shadow: 0px 4px 5px -3px rgba(0, 0, 0, 0.303);
+    text-align: center;
 }
-
-
-
 
 #capa section{
     display: inline-block;
-    margin: 20px 0px 0px 50px;
+    margin: 20px 0px 0px 0px;
+    text-align: left;
 }
 
 #capa h1{
@@ -155,7 +160,7 @@ p{
 
 
 #apresentacao{
-    max-width: 900px;
+    max-width: 1400px;
     margin: auto;
     padding: 0px 10px;
     text-align: center;
@@ -212,70 +217,209 @@ main > h2{
     text-decoration: underline;
     text-decoration-style: wavy;
     text-decoration-color: var(--destaque);
-    font-size: 2em;
+    font-size: 2.3em;
 }
 
 #projetos {
+    text-align: center;
+    margin: auto;
     padding: 10px;
-    background-color: var(--color02);
-    margin: 10px auto;
-    border-radius: 10px;
-    border: 2px solid #43679936;
-    max-width: 1000px;
+    max-width: 1400px;
     color: white;
 }
 
-
-#projetos article{
-    background-color: #08192D;
-    border: 2px solid #43679936;
-    max-width: 400px;
+article.projeto{
+    display: inline-block;
+    background-color: #01122B;
+    border: 2px solid #122848;
+    max-width: 500px;
+    width: 60%;
     border-radius: 10px;
-    z-index: 100;
+    margin-right: 10px;
+    padding: 20px;
 }
 
-#projetos article>img{
-    display: inline-block;
+article.projeto img{
     text-align: left;
-    max-width: 400px; 
+    width: 100%; 
+    border-radius: 10px;
 }
 
-#projetos p , #projetos h3{
-    padding: 10px 30px;
-    display: inline-block;
+article.projeto p {
     text-align: justify;
 }
 
-#projetos h3{
-    font-size: 1.5em;
+article.projeto h3{
+    padding-top: 20px;
+    font-size: 1.45em;
+    text-align: left;
+    margin: 0px;
 }
 
-#projetos aside{
+.descricao{
+    line-height: 3em;
+    color: var(--destaque);
+    font-weight: 500;
+
+}
+
+.tags{
+    margin-top: 10px;
+    text-align: left;
+}
+
+.tag{
+    background-color: var(--color01);
+    color: #75BAF3;
+    border: 0.02px solid #75BAF3;
     display: inline-block;
-    position: absolute;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 10px 5px 0px 0px;
+    text-align: center;
+}
+
+
+.tecnologias{
+    margin-top: 10px;
+    text-align: left;
+
+}
+
+
+.tecnologia{
+    background-color: whitesmoke;
+    color: var(--color02);
+    border: 0.02px solid darkgray;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 10px 5px 0px 0px;
+    text-align: center;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.13)    ;
+}
+
+
+#java::before{
+    content: url(images/icons/java-original.png);
+    vertical-align: middle;
+}
+
+#AndroidStudio::before{
+    content: url(images/icons/androidstudio-original.png);
+    vertical-align: middle;
+}
+
+
+
+#robotica::before{
+    content: url(images/icons/robot-icon.png);
+    vertical-align: middle;
+}
+
+#automacao::before{
+    content: url(images/icons/atomacao-icon.png);
+    vertical-align: middle;
+    vertical-align: middle;
+}
+
+.dados{
+    font-size: 0.8em;
+    margin-top: 20px;
+    border-top: 2px solid #122848;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.dados  strong{
+    color: var(--destaque);
+    font-weight: 500;
+}
+
+.dados div{
+    display: inline-block;
+    padding-left: 10px;
+
+}
+
+.dados p{
+    display: inline-block;
+    border-right: 2px solid #122848;
+    padding-right: 30px;
+    padding-left: 10px;
+}
+
+.dados img{
+    margin-left: 5px;
+}
+
+aside.projeto{
+    vertical-align: top;
+    display: inline-block;
     background-color: #253a5851;
     border: 2px solid #43679936;
-    max-width: 400px;
-    height: 570px;
-    border-radius: 0px 10px 10px 0px;
-    margin: -573px 0px 0px 405px;
-
+    max-width: 500px;
+    width: 60%;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: justify;
 }
 
-#projetos aside a{
+aside.projeto a{
     display: inline-block;
     background-color: var(--destaque);
-    margin: 20px 30px;
+    margin: 20px 0px;
     color: white;
     text-decoration: none;
     font-family: var(--title-font);
-    width: 150px;
+    width: 220px;
     text-align: center;
-    padding: 10px;
+    padding: 15px 10px;
     border-radius: 5px;
-    
 
 }
+aside.projeto h3{
+    margin: 0px;
+    padding: 10px 0px;
+    font-size: 1.6em;
+}
+
+aside.projeto p{
+    padding: 5px 0px;
+    font-family: var(--main-font);
+}
+
+.external::before{
+    content: url(images/icons/link.png);
+    vertical-align: middle;
+}
+
+aside.projeto span{
+    font-size: 1.1em;
+    font-weight: 600;
+    font-family: var(--main-font);
+}
+
+.impactos{
+    padding: 10px;
+    border: 2px solid #43679936;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+.impactos p{
+    border-bottom: 2px solid #43679936;
+}
+
+#asideh3{
+    margin: 10px;
+    text-align: center;
+    text-decoration: wavy underline;
+    text-decoration-color: var(--destaque);
+}
+
+
+
 
 
 
