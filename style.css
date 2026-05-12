@@ -1,6 +1,8 @@
 @charset "UTF-8";
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url("https://use.typekit.net/ovv2ced.css");
+
 *{
     margin: 0px;
     padding: 0px;
@@ -24,6 +26,7 @@ html{
 }
 
 #title{
+    
     display: inline-block;
     color: white;
     font-size: 16px;
@@ -46,6 +49,7 @@ nav{
     width: 100%;
     z-index: 1000; 
 }
+
 nav a{    
     font-size: 13px;
     color: white;
@@ -67,32 +71,46 @@ body{
     background-color: var(--color01);
 }
 
+main{
+    min-width: 400px;
+    margin :auto;
+}
+
 h1, h2, h3{
     font-family: var(--title-font);
-}
-
-p{
-    font-family: var(--main-font);
-}
-.capa{
-    margin: 120px 0px 50px 0px;
-    max-width: 900px;
-}
-
-.capa h1, .capa h2{
     color: white;
     margin: 10px;
     font-weight: 700;
 }
 
-.capa h1{
+p{
+    font-family: var(--main-font);
+}
+
+#capa{
+    margin: 120px auto 50px auto;
+    max-width: 1000px;
+    padding-bottom: 40px;
+    box-shadow: 0px 4px 5px -3px rgba(0, 0, 0, 0.303);
+}
+
+
+
+
+#capa section{
+    display: inline-block;
+    margin: 20px 0px 0px 50px;
+}
+
+#capa h1{
     font-size: 3em;
 }
 
-.capa p{
+#capa p{
     color: white;
     margin: 10px;
 }
+
 #contato{
     display: inline-block;
     background-color: var(--destaque);
@@ -104,31 +122,23 @@ p{
     text-align: center;
     padding: 10px;
     border-radius: 5px;
-    
 }
 
-#oi{
+#comprimento{
     text-transform: uppercase;
     color: var(--destaque);
     font-weight: 600;
 }
 
-.capa strong{
+#capa strong{
     color: var(--destaque);
 }
-
-.capa section{
-    display: inline-block;
-    margin: 10px 20px 0px 10px;
-}
-
-
 
 .avatar{
     text-align: center;
     display: inline-block;
     margin: auto;
-    padding-left: 10px ;
+    padding-left: 30px ;
 }
 
 .avatar source {
@@ -140,22 +150,34 @@ p{
     width: 29vw;
     max-width: 350px;
     vertical-align: 100% ;
-    
-
 }
 
 
 
-main{
-    max-width: 1000px;
-    min-width: 400px;
-    margin :auto;
+#apresentacao{
+    max-width: 900px;
+    margin: auto;
+    padding: 0px 10px;
+    text-align: center;
 }
 
 
-.geral h2{
-    background-color: var(--destaque);
-    font-style: var(--special-font);
+.imgg{
+    display: inline-block;
+    background-size: cover;
+}
+
+#perfil{
+    background-image: url(images/Perfil-300.png);
+    height: 230px;
+    width: 230px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px 8px rgba(0, 0, 0, 0.237);
+
+}
+
+.balao h2{
+    background-color: var(--color03);
     margin: 0px -25px;
     padding: 5px 20px;
     font-size: 1rem;
@@ -163,16 +185,11 @@ main{
     border-radius: 5px 5px 0px 0px;
 }
 
-.geral p{
+.balao p{
     padding: 20px 0px;
 }
 
-.geral p>strong{
-    color: var(--color03);
-}
-
-
-.geral{
+.balao{
     text-align: justify;
     padding: 0px 25px ;
     font-family: var(--main-font);
@@ -180,78 +197,85 @@ main{
     line-height: 1.8em;
     border-radius: 10px;
     display: inline-block;
-    margin: 80px 20px 60px 20px;
-    z-index: 0;
-    margin-left: 250px;
+    margin: 35px 0px 60px 0px;
+    box-shadow: 0px 0px 6px 8px rgba(0, 0, 0, 0.237);
+    max-width: 700px;
+    width: 60%;
+    vertical-align: top;
 }
 
-#geral img{
-    width: 230px;
-    margin: 44px 0px 0px 30px;
-}
-
-#geral .imgg{
-    display: flexbox;
-    z-index: 10;
-    position: absolute;
-
-}
-#projetos h2{
+main > h2{
     text-align: center;
     color: white;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    margin-top: 80px;
     text-decoration: underline;
     text-decoration-style: wavy;
     text-decoration-color: var(--destaque);
+    font-size: 2em;
 }
 
 #projetos {
-    padding: 30px;
+    padding: 10px;
     background-color: var(--color02);
-    margin: 10px;
+    margin: 10px auto;
     border-radius: 10px;
     border: 2px solid #43679936;
+    max-width: 1000px;
+    color: white;
 }
-#projetos>div{
-    margin: auto;
-    text-align: center;
-}
+
+
 #projetos article{
+    background-color: #08192D;
+    border: 2px solid #43679936;
+    max-width: 400px;
+    border-radius: 10px;
+    z-index: 100;
+}
+
+#projetos article>img{
     display: inline-block;
-    max-width: 300px;
-    vertical-align: top;
-    background-color: var(--color05);
-    margin: 30px 10px 10px 0px;
-    height: 600px;
-    border-radius: 10px 10px 10px 10px;
-    position: relative;
+    text-align: left;
+    max-width: 400px; 
+}
+
+#projetos p , #projetos h3{
+    padding: 10px 30px;
+    display: inline-block;
+    text-align: justify;
 }
 
 #projetos h3{
-    display: flexbox;
-    position: absolute;
-    margin: 235px 0px;
-    text-transform: uppercase;
-    background-image: linear-gradient( to top, var(--color05), rgba(255, 255, 255, 0.093));
-    width: 300px;
     font-size: 1.5em;
-    font-weight: bold;
-    color: #176be0;
+}
+
+#projetos aside{
+    display: inline-block;
+    position: absolute;
+    background-color: #253a5851;
+    border: 2px solid #43679936;
+    max-width: 400px;
+    height: 570px;
+    border-radius: 0px 10px 10px 0px;
+    margin: -573px 0px 0px 405px;
+
+}
+
+#projetos aside a{
+    display: inline-block;
+    background-color: var(--destaque);
+    margin: 20px 30px;
+    color: white;
+    text-decoration: none;
+    font-family: var(--title-font);
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
     
 
 }
-
-#projetos p{
-    padding: 20px;
-    text-align: justify;
-   
-}
-
-#projetos img{
-    border-radius: 10px 10px 0px 0px;
-    width: 600px;
-}
-
 
 
 
