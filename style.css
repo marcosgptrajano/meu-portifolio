@@ -43,6 +43,18 @@ html{
     color: var(--destaque);
 }
 
+
+@media (max-width: 740px) {
+    nav {
+        display: none;
+    }
+    #capa{
+        margin-top: -100px;
+    }
+    
+}
+
+
 nav{
     background-color: var(--color01);
     position: fixed;
@@ -52,6 +64,7 @@ nav{
     width: 100%;
     z-index: 1000; 
 }
+
 
 nav a{    
     font-size: 13px;
@@ -97,7 +110,7 @@ p{
 }
 
 #capa{
-    margin: 120px auto 50px auto;
+    margin: 10vw auto 50px auto;
     max-width: 1400px;
     padding-bottom: 40px;
     box-shadow: var(--box-shadow);
@@ -191,10 +204,12 @@ p{
     font-size: 1rem;
     color: white;
     border-radius: 5px 5px 0px 0px;
+    
 }
 
 .balao p{
     padding: 20px 0px;
+
 }
 
 .balao{
@@ -236,7 +251,7 @@ article.projeto{
     background-color: #01122B;
     border: 2px solid #122848;
     max-width: 500px;
-    width: 60%;
+    width: 80%;
     border-radius: 10px;
     margin-right: 10px;
     padding: 20px;
@@ -362,7 +377,7 @@ aside.projeto{
     background-color: #253a5851;
     border: 2px solid #43679936;
     max-width: 500px;
-    width: 60%;
+    width: 80%;
     border-radius: 10px;
     padding: 20px;
     text-align: justify;
@@ -530,6 +545,7 @@ footer{
     text-align: center;
     padding: 50px;
     border-top: 2px solid lightgray;
+    max-width: 100%;
     
 }
 
