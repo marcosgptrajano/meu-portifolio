@@ -235,7 +235,7 @@ main > h2{
     text-decoration: underline;
     text-decoration-style: wavy;
     text-decoration-color: var(--destaque);
-    font-size: 2.3em;
+    font-size: 2em;
 }
 
 #projetos {
@@ -251,7 +251,7 @@ article.projeto{
     background-color: #01122B;
     border: 2px solid #122848;
     max-width: 500px;
-    width: 80%;
+    width: 75%;
     border-radius: 10px;
     margin-right: 10px;
     padding: 20px;
@@ -377,7 +377,7 @@ aside.projeto{
     background-color: #253a5851;
     border: 2px solid #43679936;
     max-width: 500px;
-    width: 80%;
+    width: 75%;
     border-radius: 10px;
     padding: 20px;
     text-align: justify;
@@ -543,10 +543,8 @@ aside.projeto span{
 footer{
     background-color: white;
     text-align: center;
-    padding: 50px;
+    padding: 50px auto;
     border-top: 2px solid lightgray;
-    max-width: 100%;
-    
 }
 
 footer h2{
