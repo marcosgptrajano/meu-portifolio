@@ -250,7 +250,7 @@ article.projeto{
     background-color: #01122B;
     border: 2px solid #122848;
     max-width: 500px;
-    width: 75%;
+    width: 82%;
     border-radius: 10px;
     margin-right: 10px;
     padding: 20px;
@@ -376,7 +376,7 @@ aside.projeto{
     background-color: #253a5851;
     border: 2px solid #43679936;
     max-width: 500px;
-    width: 75%;
+    width: 82%;
     border-radius: 10px;
     padding: 20px;
     text-align: justify;
@@ -565,7 +565,9 @@ footer a img{
     vertical-align: middle;
 }
 
-
+#fim{
+    padding-bottom: 40px;
+}
 
 
 
