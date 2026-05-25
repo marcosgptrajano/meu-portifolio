@@ -22,6 +22,7 @@ html{
     --color02: #01122B;
     --color03: #436799;
     --destaque: rgb(23, 107, 224);
+    --special-contrast: rgb(110, 172, 242);
     --box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
     --main-font: 'poppins-thin';
     --title-font: 'Inter';
@@ -275,8 +276,8 @@ article.projeto h3{
 
 .descricao{
     line-height: 3em;
-    color: var(--destaque);
     font-weight: 500;
+    color: var(--special-contrast);
 
 }
 
@@ -349,7 +350,7 @@ article.projeto h3{
 }
 
 .dados  strong{
-    color: var(--destaque);
+    color: var(--special-contrast);
     font-weight: 500;
 }
 
@@ -569,5 +570,8 @@ footer a img{
     padding-bottom: 40px;
 }
 
+.need-contrast{
+    color: var(--special-contrast) ;
+}
 
 
