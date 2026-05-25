@@ -54,6 +54,12 @@ html{
     }
     
 }
+@media (max-width: 740px) {
+    .avatar img{
+        height: 0px;
+    }
+}
+
 
 
 nav{
@@ -162,7 +168,7 @@ p{
     padding-left: 30px ;
 }
 
-.avatar source {
+.avatar picture > source {
     display: none;
 }
 
