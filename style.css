@@ -58,6 +58,9 @@ html{
     .avatar img{
         height: 0px;
     }
+    article p{
+        text-align: center;
+    }
 }
 
 
